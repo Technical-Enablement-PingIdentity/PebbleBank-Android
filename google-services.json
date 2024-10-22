@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "158022670316",
+    "project_id": "xf-demo-authenticator",
+    "storage_bucket": "xf-demo-authenticator.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:158022670316:android:2672eb114b3850cef452c9",
+        "android_client_info": {
+          "package_name": "org.forgerock.pebblebank"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDeBXUoPeGTR_bhPjX-BNIMUIdx1U_BrX4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

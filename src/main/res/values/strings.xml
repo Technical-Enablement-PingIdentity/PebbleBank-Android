@@ -1,0 +1,123 @@
+<!--
+  ~ Copyright (c) 2019 ForgeRock. All rights reserved.
+  ~
+  ~ This software may be modified and distributed under the terms
+  ~ of the MIT license. See the LICENSE file for details.
+  ~
+  -->
+
+<resources>
+    <string name="app_name">Pebble Bank</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Pebble Bank</string>
+    <string name="nav_header_subtitle">pebble.bank@pebblebank.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="menu_account_overview">Account Overview</string>
+    <string name="menu_transfer">Transfer</string>
+    <string name="menu_slideshow">Slideshow</string>
+    <string name="menu_tools">Tools</string>
+    <string name="menu_biometric">Biometric</string>
+    <!--string name="menu_biometric">mPIN</string-->
+    <string name="menu_logout">Logout</string>
+
+    <string name="title_activity_login">LoginActivity</string>
+    <string name="welcome">Welcome\nto\nPebble Bank</string>
+
+    <string name="dummy_button">Dummy Button</string>
+    <string name="title_activity_main">MainActivity</string>
+    <string name="home">Home</string>
+    <string name="creditCards">Credit Cards</string>
+    <string name="savings">Savings</string>
+    <string name="business">Business</string>
+
+    <!--  Forgerock SDK Configuration -->
+
+    <!--  ForgeRock SDK Configuration -->
+
+    <!-- OAuth -->
+    <string name="forgerock_oauth_client_id" translatable="false">sdk-client</string>
+    <string name="forgerock_oauth_redirect_uri" translatable="false">org.forgerock.demo:/oauth2redirect</string>
+    <integer name="forgerock_oauth_cache" translatable="false">5000</integer> <!-- in second -->
+    <string name="forgerock_oauth_scope" translatable="false">openid profile email address phone</string>
+    <integer name="forgerock_oauth_threshold" translatable="false">30</integer> <!-- in second -->
+
+    <!-- The following setting is for local development environment only -->
+<!--
+    <string name="forgerock_url" translatable="false">https://xf-75-forgeops.encore.forgerock.org/am</string>
+    <string name="forgerock_realm" translatable="false">root</string>
+
+    <integer name="forgerock_timeout" translatable="false">30</integer>
+    <string name="forgerock_cookie_name" translatable="false">iPlanetDirectoryPro</string>
+    <string-array name="forgerock_ssl_pinning_public_key_hashes"></string-array>
+-->
+
+    <string name="forgerock_url" translatable="false">https://openam-briid-ciam.forgeblocks.com/am</string>
+    <string name="forgerock_realm" translatable="false">alpha</string>
+
+    <integer name="forgerock_timeout" translatable="false">30</integer>
+    <string name="forgerock_cookie_name" translatable="false">420ab223210763b</string>
+    <string-array name="forgerock_ssl_pinning_public_key_hashes"></string-array>
+
+<!--
+    <string name="forgerock_url" translatable="false">https://openam-bbl-ciam.forgeblocks.com/am</string>
+    <string name="forgerock_realm" translatable="false">alpha</string>
+
+    <integer name="forgerock_timeout" translatable="false">30</integer>
+    <string name="forgerock_cookie_name" translatable="false">bff577e0c237a57</string>
+    <string-array name="forgerock_ssl_pinning_public_key_hashes"></string-array>
+-->
+    <!-- SSO -->
+    <string name="forgerock">ForgeRock</string> <!-- Account Label -->
+    <string name="forgerock_account_name" translatable="false">ForgeRock</string> <!-- Account Name -->
+    <string name="forgerock_webauthn_account_name" translatable="false">WebAuthn</string>
+    <integer name="forgerock_webauthn_max_credential" translatable="false">10</integer>
+
+    <!-- Service -->
+    <!--string name="forgerock_auth_service" translatable="false">Login-2-copy</string-->
+    <string name="forgerock_auth_service" translatable="false">XXX-onBoarding</string>
+    <string name="forgerock_registration_service" translatable="false">Registration-2-P1P</string>
+    <string name="forgerock_centralize_service" translatable="false">BRIID-Start</string>
+
+    <string name="asset_statements" translatable="false">           [{
+             "include": "https://petrov.ca/.well-known/assetlinks.json"
+           }]</string>
+
+    <!-- Facebook -->
+    <string name="facebook_app_id">224359139892846</string>
+    <string name="fb_login_protocol_scheme">fb224359139892846</string>
+
+
+    <!-- End of SDK Configuration -->
+
+    <!-- System notifications-->
+    <string name="system_notification_title">Login attempt from %1$s at %2$s</string>
+    <string name="system_notification_body">Tap to log in</string>
+    <string name="channel_name">Push Authentication Alerts</string>
+    <string name="channel_id">org.forgerock.authenticator.push</string>
+
+    <!-- Push authentication approval activity -->
+    <string name="pushauth_login_title">Log into %1$s?</string>
+    <string name="push_authorize">Use the buttons to Accept or Reject the request</string>
+    <string name="pushauth_fail_title">Error</string>
+    <string name="notification_error_network_failure_message">Unable to contact the server.\nEnsure you are connected to the internet, and try again.</string>
+    <string name="push_approve">Accept</string>
+    <string name="push_deny">Reject</string>
+    <string name="push_notification_approval">Push Authentication request was %1$s successfully</string>
+
+    <string name="signIn">Sign In</string>
+    <string name="title_activity_transfer_authorization">TransferAuthorization</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+</resources>
