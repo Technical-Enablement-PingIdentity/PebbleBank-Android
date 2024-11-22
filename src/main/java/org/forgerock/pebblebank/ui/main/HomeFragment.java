@@ -186,20 +186,20 @@ public class HomeFragment extends Fragment implements FRListener<Void> {
     public void launchBrowser() {
         FROptions options = FROptionsBuilder.build(frOptionsBuilder -> {
             frOptionsBuilder.server(serverBuilder -> {
-                serverBuilder.setUrl("https://brimo.encore.pingidentity.org/am");
-                serverBuilder.setRealm("bravo");
-                serverBuilder.setCookieName("420ab223210763b");
+                serverBuilder.setUrl(getResources().getString(R.string.forgerock_url));
+                serverBuilder.setRealm(getResources().getString(R.string.forgerock_realm));
+                serverBuilder.setCookieName(getResources().getString(R.string.forgerock_cookie_name));
                 return null;
             });
             frOptionsBuilder.oauth(oAuthBuilder -> {
-                oAuthBuilder.setOauthClientId("sdk-client");
-                oAuthBuilder.setOauthRedirectUri("org.forgerock.demo:/oauth2redirect");
-                oAuthBuilder.setOauthScope("openid profile email address phone");
+                oAuthBuilder.setOauthClientId(getResources().getString(R.string.forgerock_oauth_client_id));
+                oAuthBuilder.setOauthRedirectUri(getResources().getString(R.string.forgerock_oauth_redirect_uri));
+                oAuthBuilder.setOauthScope(getResources().getString(R.string.forgerock_oauth_scope));
                 return null;
             });
             frOptionsBuilder.service(serviceBuilder -> {
-                serviceBuilder.setAuthServiceName("Login");
-                serviceBuilder.setRegistrationServiceName("Registration");
+                serviceBuilder.setAuthServiceName(getResources().getString(R.string.forgerock_auth_service));
+                serviceBuilder.setRegistrationServiceName(getResources().getString(R.string.forgerock_registration_service));
                 return null;
             });
             return null;
@@ -208,8 +208,8 @@ public class HomeFragment extends Fragment implements FRListener<Void> {
         FRUser.browser().appAuthConfigurer()
                 .authorizationRequest(r -> {
                     Map<String, String> additionalParameters = new HashMap<>();
-                    additionalParameters.put("service", getContext().getString(R.string.forgerock_centralize_service));
-                    additionalParameters.put("KEY2", "VALUE2");
+//                    additionalParameters.put("service", getContext().getString(R.string.forgerock_centralize_service));
+//                    additionalParameters.put("KEY2", "VALUE2");
                     r.setAdditionalParameters(additionalParameters);
                     //r.setLoginHint("login");
                     //r.setPrompt("login");
