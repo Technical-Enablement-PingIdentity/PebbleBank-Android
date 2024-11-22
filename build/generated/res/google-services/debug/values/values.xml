@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<resources>
-    <string name="gcm_defaultSenderId" translatable="false">158022670316</string>
-    <string name="google_api_key" translatable="false">AIzaSyDeBXUoPeGTR_bhPjX-BNIMUIdx1U_BrX4</string>
-    <string name="google_app_id" translatable="false">1:158022670316:android:2672eb114b3850cef452c9</string>
-    <string name="google_crash_reporting_api_key" translatable="false">AIzaSyDeBXUoPeGTR_bhPjX-BNIMUIdx1U_BrX4</string>
-    <string name="google_storage_bucket" translatable="false">xf-demo-authenticator.appspot.com</string>
-    <string name="project_id" translatable="false">xf-demo-authenticator</string>
-</resources>
