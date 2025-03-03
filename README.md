@@ -15,6 +15,7 @@ PING IDENTITY SHALL NOT HAVE ANY LIABILITY ARISING OUT OF OR RELATING TO ANY USE
 ## Setup the source code
 
 1. Download the ForgeRock SDK for Android from the [Github Repo](https://github.com/ForgeRock/forgerock-android-sdk).
+   1. **IMPORTANT** Make sure you clone the ForgeRock SDK into a folder that doesn't contain any spaces, Android Studio may throw NDK errors during the build if there are any spaces in the path to the project
 2. Clone this repo into the /samples folder, if the folder does not exist you will need to create it.
 3. Rename the directory to "pebblebank-app".
 4. Modify settings.gradle.kts file by adding:
